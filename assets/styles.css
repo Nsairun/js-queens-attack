@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background: #8B4513;
+    background: #f8f5f2;
     color: black;
     text-align: center;
     margin: 0 0 30px 0;
@@ -26,17 +26,17 @@ body {
    .dark {
     width: 80px;
     height: 80px;
-    background-color: #714d38;
+    background-color: #161616ee;
     display: table-cell;
     vertical-align: baseline;
-    border:5px solid #714d38;
+    border:5px solid #fdfbfa;
   
   }
   
   .light {
     width: 80px;
     height: 80px;
-    background-color: #efddb4;
+    background-color: #f1ebdb44;
     display: table-cell;
     vertical-align: baseline;
     border: 5px solid #efddb4;
@@ -70,7 +70,7 @@ body {
   }
   
   #check:hover, #refresh:hover {
-    background: #8B4513;
+    background: #08b3e7;
   }
   
   .alerts {

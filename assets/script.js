@@ -16,7 +16,7 @@ attack.addEventListener("click", checkAttack);
         noSelected--;
         return;
       } else if (noSelected < 2) {
-        this.style.border = "5px solid black";
+        this.style.border = "5px solid brown";
         selectedCell.push(id)
         noSelected++;
       } else {
