@@ -24,7 +24,7 @@ function selectPosition () {
     alert.textContent = ''
   }
 }
-for (let i = 0; i < select.length ;i++) {
+for (let i = 0; i < select.length; i++) {
   select[i].addEventListener('click', selectPosition, false)
 }
 
@@ -33,14 +33,14 @@ function attackFunction() {
     alerts.textContent = 'You will have to make two moves!'
     alert.textContent = ''
   } else {
-    let position1 = selectedCell[0]
-    let position2 = selectedCell[1]
+    const position1 = selectedCell[0]
+    const position2 = selectedCell[1]
 
-    let cell11 = position1.split('', position1)[0]
-    let cell12 = position1.split('', position1)[1]
+    const cell11 = position1.split('', position1)[0]
+    const cell12 = position1.split('', position1)[1]
 
-    let cell21 = position2.split('', position2)[0]
-    let cell22 = position2.split('', position2)[1]
+    const cell21 = position2.split('', position2)[0]
+    const cell22 = position2.split('', position2)[1]
 
     if (cell11 === cell21) {
       return true
@@ -54,9 +54,9 @@ function attackFunction() {
       return true
     }
 
-    let positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
+    const positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
 
-    let moduleRightLeft = positionRightLeft % 9 === 0 ? true : false
+    const moduleRightLeft = positionRightLeft % 9 === 0 ? true : false
 
     if (moduleRightLeft) {
       return true
@@ -66,12 +66,11 @@ function attackFunction() {
   }
 }
 
-function checkAttack() {
+function checkAttack () {
   let attack = attackFunction()
   if (attack) {
     alert.textContent = 'A Queen has been attacked!!!'
     alerts.textContent = ''
   }
   alerts.style.display = 'block'
-  return
 }
