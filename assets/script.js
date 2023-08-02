@@ -5,17 +5,16 @@ const attack = document.querySelector('#check')
 
 attack.addEventListener('click', checkAttack)
 let noSelected = 0
-let selectedCell = []
+const selectedCell = []
 
-function selectPosition() {
-  let id = this.getAttribute('id')
+function selectPosition () {
+  const id = this.getAttribute('id')
 
-  let selectedIndex = selectedCell.indexOf(id)
+  const selectedIndex = selectedCell.indexOf(id)
 
   if (selectedIndex >= 0) {
     this.style.border = 'none'
     noSelected--
-    return
   } else if (noSelected < 2) {
     this.style.border = '5px solid brown'
     selectedCell.push(id)
@@ -24,9 +23,7 @@ function selectPosition() {
     alerts.textContent = ' You can only make two moves!'
     alert.textContent = ''
   }
-  return
 }
-
 for (let i = 0; i < select.length ;i++) {
   select[i].addEventListener('click', selectPosition, false)
 }
