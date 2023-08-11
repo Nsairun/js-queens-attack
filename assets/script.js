@@ -28,7 +28,7 @@ for (let i = 0; i < select.length; i++) {
   select[i].addEventListener('click', selectPosition, false)
 }
 
-function attackFunction() {
+function attackFunction () {
   if (selectedCell.length !== 2) {
     alerts.textContent = 'You will have to make two moves!'
     alert.textContent = ''
@@ -67,7 +67,7 @@ function attackFunction() {
 }
 
 function checkAttack () {
-  let attack = attackFunction()
+  const attack = attackFunction()
   if (attack) {
     alert.textContent = 'A Queen has been attacked!!!'
     alerts.textContent = ''

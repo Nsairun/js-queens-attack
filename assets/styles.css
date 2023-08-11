@@ -9,7 +9,7 @@ header {
   background: #f8f5f2;
   color: #000;
   text-align: center;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   padding: 20px;
 }
 
@@ -76,6 +76,7 @@ header {
 .alerts {
   display: inline;
 }
+
 #alert {
   display: block;
   font-size: 18px;
@@ -90,7 +91,7 @@ header {
 #alerterror {
   display: block;
   font-size: 18px;
-  color: #ff0000;
+  color: #ff0000ec;
   text-align: center;
   margin: auto;
   margin-top: 15px;
