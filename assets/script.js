@@ -56,7 +56,7 @@ function attackFunction () {
 
     const positionRightLeft = Math.abs(parseInt(position1) - parseInt(position2))
 
-    const moduleRightLeft = positionRightLeft % 9 === 0 ? true : false
+    const moduleRightLeft = positionRightLeft % 9 === 0
 
     if (moduleRightLeft) {
       return true
